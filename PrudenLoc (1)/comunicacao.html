@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrudenLoc | Comunicação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span>PRUDEN</span><span class="logo-red">LOC</span>
+        <small>Presidente Prudente - SP</small>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="monumentos.html">Monumentos</a>
+        <a href="cultura.html">Cultura</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="comunicacao.html">Comunicação</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">
+            PARTICIPAÇÃO DA COMUNIDADE
+        </span>
+
+        <h1>
+            Compartilhe sua História
+        </h1>
+
+        <p>
+            Ajude a preservar a memória de Presidente Prudente enviando histórias,
+            receitas, eventos, opiniões e sugestões sobre a cidade.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <span>COMUNICAÇÃO</span>
+        <h2>Fale Conosco</h2>
+        <p>
+            Toda contribuição será analisada antes da publicação.
+        </p>
+    </div>
+
+    <div class="communication-box">
+
+        <form
+            id="formComunicacao"
+            action="https://formsubmit.co/vieiradesouzamariaclara918@gmail.com"
+            method="POST">
+
+            <input type="hidden" name="_subject" value="Nova contribuição - PrudenLoc">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="nome">
+                Seu nome
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required>
+
+            <label for="tipo">
+                Tipo de contribuição
+            </label>
+
+            <select
+                id="tipo"
+                name="tipo"
+                required>
+
+                <option value="">
+                    Selecione
+                </option>
+
+                <option>História de Bairro</option>
+                <option>Receita</option>
+                <option>Opinião</option>
+                <option>Evento</option>
+                <option>Indicação de Lugar</option>
+                <option>Outro</option>
+
+            </select>
+
+            <label for="mensagem">
+                Sua Mensagem
+            </label>
+
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="8"
+                placeholder="Escreva sua contribuição..."
+                required></textarea>
+
+            <p class="privacy-note">
+                As informações enviadas serão avaliadas antes de aparecerem no site.
+            </p>
+
+            <button type="submit" class="btn">
+                Enviar Contribuição
+            </button>
+
+            <p id="feedback"></p>
+
+        </form>
+
+    </div>
+</section>
+
+<section class="section events-section">
+    <div class="section-heading">
+        <span>COMO FUNCIONA</span>
+        <h2>Processo de Publicação</h2>
+    </div>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="card-content">
+                <h3>1️⃣ Envio</h3>
+                <p>
+                    Você envia sua história, receita, evento ou sugestão.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-content">
+                <h3>2️⃣ Análise</h3>
+                <p>
+                    A equipe do PrudenLoc verifica o conteúdo enviado.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-content">
+                <h3>3️⃣ Publicação</h3>
+                <p>
+                    Após aprovação, o conteúdo poderá ser divulgado no site.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <h2>PRUDENLOC</h2>
+
+    <p>
+        Sua participação ajuda a preservar a memória da cidade.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <small>
+        Projeto educacional - PrudenLoc
+    </small>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
